@@ -1,0 +1,7 @@
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/talleres/L08/ejercitacion-trie/ejercitacion-trie/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/talleres/L08/ejercitacion-trie/ejercitacion-trie/cmake-build-debug/CMakeFiles/correrValgrind.dir
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/talleres/L08/ejercitacion-trie/ejercitacion-trie/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/talleres/L08/ejercitacion-trie/ejercitacion-trie/cmake-build-debug/CMakeFiles/gtest.dir
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/talleres/L08/ejercitacion-trie/ejercitacion-trie/cmake-build-debug/CMakeFiles/correrTests.dir
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/talleres/L08/ejercitacion-trie/ejercitacion-trie/cmake-build-debug/CMakeFiles/gtest_main.dir
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/talleres/L08/ejercitacion-trie/ejercitacion-trie/cmake-build-debug/CMakeFiles/correrTests_ext.dir
