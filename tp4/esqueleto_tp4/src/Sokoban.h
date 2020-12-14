@@ -35,7 +35,8 @@ private:
     Nivel *_nivel;
     vector<Nat> _accionFue;
     vector<bool> _accionMovioCaja;
-    vector<Coordenada*> _cajaMovida;
+    //vector<set<Coordenada>::iterator> _cajaMovida;
+    vector<int> _cajaMovida;
 };
 
 

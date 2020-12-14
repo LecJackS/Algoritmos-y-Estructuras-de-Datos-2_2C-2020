@@ -7,8 +7,10 @@
 Nivel::Nivel(Mapa m, Coordenada p, set<Coordenada> cs, Nat b) {
     _mapa = m;
     _persona = p;
-    _cajas = cs;
     _bombas = b;
+    for(Coordenada caja : cs){
+        _cajas.push_back(caja);
+    }
 }
 
 Mapa Nivel::mapaN() {
@@ -31,9 +33,10 @@ Nat Nivel::numBombasN() {
     return _bombas;
 }
 
-void Nivel::modificarCaja(Coordenada *caja, Coordenada nueva_coord) {
-    caja->first = nueva_coord.first;
-    caja->second = nueva_coord.second;
+void Nivel::modificarCaja(int idCaja, Coordenada nueva_coord) {
+    //_cajas.erase(itCaja);
+    //_cajas.insert(itCaja, nueva_coord);
+    _cajas[idCaja] = nueva_coord;
 }
 
 void Nivel::modificarPersona(Coordenada coord) {
@@ -51,19 +54,13 @@ void Nivel::aumentarBombas() {
     _bombas += 1;
 }
 
-Coordenada *Nivel::buscarCaja(Coordenada coord) {
-    Nat nc = _cajas.size();
-    Coordenada *res = NULL;
-    //auto res = _cajas.find(coord);
-//    set<Coordenada>::iterator it = _cajas.begin();
-//    while(it != _cajas.end()){
-//        if(*it == coord){
-//            res = &(*it);
-//        }
-//        it++;
-//    }
-    // TODO:
-    return res;
+int Nivel::buscarCaja(Coordenada coord) {
+    // Iterador a elemento del set
+    int id = 0;
+    while(id < _cajas.size() && _cajas[id]!=coord){
+        id++;
+    }
+    return id;
 }
 
 

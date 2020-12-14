@@ -16,17 +16,17 @@ public:
     set<Coordenada> cajasN();
     Nat numBombasN();
 
-    void modificarCaja(Coordenada *caja, Coordenada nueva_coord);
+    void modificarCaja(int idCaja, Coordenada nueva_coord);
     void modificarPersona(Coordenada coord);
     void reducirBombas();
     void aumentarBombas();
 
-    Coordenada * buscarCaja(Coordenada coord);
+    int buscarCaja(Coordenada coord);
 
 private:
     Mapa _mapa;
     Coordenada _persona;
-    set<Coordenada> _cajas;
+    vector<Coordenada> _cajas;
     Nat _bombas;
 
 };

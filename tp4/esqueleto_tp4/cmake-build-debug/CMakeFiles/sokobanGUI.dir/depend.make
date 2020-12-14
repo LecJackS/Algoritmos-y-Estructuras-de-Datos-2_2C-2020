@@ -6,16 +6,28 @@ CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o: ../gui/InterfazGrafica.h
 CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o: ../gui/MapaGrafico.h
 CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o: ../gui/RenderizadorMapaGrafico.h
 CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o: ../gui/Textura.h
+CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o: ../src/Juego.h
+CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o: ../src/Mapa.h
+CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o: ../src/Nivel.h
+CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o: ../src/Sokoban.h
 CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o: ../src/Tipos.h
 CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o: ../src/aed2_Juego.h
 
 CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.o: ../gui/LectorDeNiveles.cpp
 CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.o: ../gui/LectorDeNiveles.h
+CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.o: ../src/Juego.h
+CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.o: ../src/Mapa.h
+CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.o: ../src/Nivel.h
+CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.o: ../src/Sokoban.h
 CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.o: ../src/Tipos.h
 CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.o: ../src/aed2_Juego.h
 
 CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.o: ../gui/MapaGrafico.cpp
 CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.o: ../gui/MapaGrafico.h
+CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.o: ../src/Juego.h
+CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.o: ../src/Mapa.h
+CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.o: ../src/Nivel.h
+CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.o: ../src/Sokoban.h
 CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.o: ../src/Tipos.h
 CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.o: ../src/aed2_Juego.h
 
@@ -23,6 +35,10 @@ CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o: ../gui/MapaGrafico.
 CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o: ../gui/RenderizadorMapaGrafico.cpp
 CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o: ../gui/RenderizadorMapaGrafico.h
 CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o: ../gui/Textura.h
+CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o: ../src/Juego.h
+CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o: ../src/Mapa.h
+CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o: ../src/Nivel.h
+CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o: ../src/Sokoban.h
 CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o: ../src/Tipos.h
 CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o: ../src/aed2_Juego.h
 
@@ -35,10 +51,19 @@ CMakeFiles/sokobanGUI.dir/gui/main.cpp.o: ../gui/MapaGrafico.h
 CMakeFiles/sokobanGUI.dir/gui/main.cpp.o: ../gui/RenderizadorMapaGrafico.h
 CMakeFiles/sokobanGUI.dir/gui/main.cpp.o: ../gui/Textura.h
 CMakeFiles/sokobanGUI.dir/gui/main.cpp.o: ../gui/main.cpp
+CMakeFiles/sokobanGUI.dir/gui/main.cpp.o: ../src/Juego.h
+CMakeFiles/sokobanGUI.dir/gui/main.cpp.o: ../src/Mapa.h
+CMakeFiles/sokobanGUI.dir/gui/main.cpp.o: ../src/Nivel.h
+CMakeFiles/sokobanGUI.dir/gui/main.cpp.o: ../src/Sokoban.h
 CMakeFiles/sokobanGUI.dir/gui/main.cpp.o: ../src/Tipos.h
 CMakeFiles/sokobanGUI.dir/gui/main.cpp.o: ../src/aed2_Juego.h
 
 CMakeFiles/sokobanGUI.dir/src/Juego.cpp.o: ../src/Juego.cpp
+CMakeFiles/sokobanGUI.dir/src/Juego.cpp.o: ../src/Juego.h
+CMakeFiles/sokobanGUI.dir/src/Juego.cpp.o: ../src/Mapa.h
+CMakeFiles/sokobanGUI.dir/src/Juego.cpp.o: ../src/Nivel.h
+CMakeFiles/sokobanGUI.dir/src/Juego.cpp.o: ../src/Sokoban.h
+CMakeFiles/sokobanGUI.dir/src/Juego.cpp.o: ../src/Tipos.h
 
 CMakeFiles/sokobanGUI.dir/src/Mapa.cpp.o: ../src/Mapa.cpp
 CMakeFiles/sokobanGUI.dir/src/Mapa.cpp.o: ../src/Mapa.h
@@ -49,9 +74,16 @@ CMakeFiles/sokobanGUI.dir/src/Nivel.cpp.o: ../src/Nivel.cpp
 CMakeFiles/sokobanGUI.dir/src/Nivel.cpp.o: ../src/Nivel.h
 CMakeFiles/sokobanGUI.dir/src/Nivel.cpp.o: ../src/Tipos.h
 
+CMakeFiles/sokobanGUI.dir/src/Sokoban.cpp.o: ../src/Mapa.h
+CMakeFiles/sokobanGUI.dir/src/Sokoban.cpp.o: ../src/Nivel.h
 CMakeFiles/sokobanGUI.dir/src/Sokoban.cpp.o: ../src/Sokoban.cpp
 CMakeFiles/sokobanGUI.dir/src/Sokoban.cpp.o: ../src/Sokoban.h
+CMakeFiles/sokobanGUI.dir/src/Sokoban.cpp.o: ../src/Tipos.h
 
+CMakeFiles/sokobanGUI.dir/src/aed2_Juego.cpp.o: ../src/Juego.h
+CMakeFiles/sokobanGUI.dir/src/aed2_Juego.cpp.o: ../src/Mapa.h
+CMakeFiles/sokobanGUI.dir/src/aed2_Juego.cpp.o: ../src/Nivel.h
+CMakeFiles/sokobanGUI.dir/src/aed2_Juego.cpp.o: ../src/Sokoban.h
 CMakeFiles/sokobanGUI.dir/src/aed2_Juego.cpp.o: ../src/Tipos.h
 CMakeFiles/sokobanGUI.dir/src/aed2_Juego.cpp.o: ../src/aed2_Juego.cpp
 CMakeFiles/sokobanGUI.dir/src/aed2_Juego.cpp.o: ../src/aed2_Juego.h

@@ -85,17 +85,20 @@ Nat Mapa::buscarPosicion(string objeto, Coordenada nueva_coord) {
     }
     for (int i=0; i<v->size(); i++){
         Coordenada c = v->at(i);
-        if (c.first < nueva_coord.first){
+        if (nueva_coord.first < c.first){
             pos = i;
             return pos;
         }
         else if (c.first == nueva_coord.first) {
-            if (c.second < nueva_coord.second){
+            if (nueva_coord.second < c.second){
                 pos = i;
                 return pos;
+            } else{
+
             }
         }
     }
+    pos = v->size();
     return pos;
 }
 

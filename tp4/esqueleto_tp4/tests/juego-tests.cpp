@@ -30,6 +30,13 @@ protected:
         posiciones789 = {pos7, pos8, pos9};
         posiciones5789 = {pos5, pos7, pos8, pos9};
         n1 = {posiciones123, posiciones456, posiciones789, pos0, 2};
+//        struct aed2_Nivel {
+//            set<Coordenada> paredes;
+//            set<Coordenada> depositos;
+//            set<Coordenada> cajas;
+//            Coordenada posicionInicial;
+//            Nat cantidadBombas;
+//        };
         // Nivel n1:
         //
         // -D---

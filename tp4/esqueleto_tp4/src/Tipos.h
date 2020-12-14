@@ -21,6 +21,10 @@ inline Coordenada operator+(const Coordenada & l, const Coordenada & r) {
     return {l.first + r.first,l.second + r.second};
 }
 
+inline Coordenada operator-(const Coordenada & l, const Coordenada & r) {
+    return {l.first - r.first,l.second - r.second};
+}
+
 inline Coordenada operator+(const Coordenada & l, const PuntoCardinal dir) {
     Coordenada paso;
     switch (dir) {
@@ -39,6 +43,26 @@ inline Coordenada operator+(const Coordenada & l, const PuntoCardinal dir) {
     }
 
     return l + paso;
+}
+
+inline Coordenada operator-(const Coordenada & l, const PuntoCardinal dir) {
+    Coordenada paso;
+    switch (dir) {
+        case Norte:
+            paso = Coordenada(0,1);
+            break;
+        case Este:
+            paso = Coordenada(1,0);
+            break;
+        case Sur:
+            paso = Coordenada(0,-1);
+            break;
+        case Oeste:
+            paso = Coordenada(-1,0);
+            break;
+    }
+
+    return l - paso;
 }
 
 // subsV(vector, desde, hasta) : Devuelvo vector[desde:hasta]

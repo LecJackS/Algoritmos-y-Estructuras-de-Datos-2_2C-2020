@@ -7,16 +7,28 @@ CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/MapaGrafico.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/RenderizadorMapaGrafico.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/Textura.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/aed2_Juego.h
 CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.o
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/LectorDeNiveles.cpp
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/LectorDeNiveles.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/aed2_Juego.h
 CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.o
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/MapaGrafico.cpp
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/MapaGrafico.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/aed2_Juego.h
 CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o
@@ -24,6 +36,10 @@ CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/RenderizadorMapaGrafico.cpp
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/RenderizadorMapaGrafico.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/Textura.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/aed2_Juego.h
 CMakeFiles/sokobanGUI.dir/gui/Textura.cpp.o
@@ -36,10 +52,19 @@ CMakeFiles/sokobanGUI.dir/gui/main.cpp.o
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/RenderizadorMapaGrafico.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/Textura.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/main.cpp
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/aed2_Juego.h
 CMakeFiles/sokobanGUI.dir/src/Juego.cpp.o
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.cpp
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h
 CMakeFiles/sokobanGUI.dir/src/Mapa.cpp.o
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.cpp
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.h
@@ -50,9 +75,16 @@ CMakeFiles/sokobanGUI.dir/src/Nivel.cpp.o
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h
 CMakeFiles/sokobanGUI.dir/src/Sokoban.cpp.o
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.cpp
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h
 CMakeFiles/sokobanGUI.dir/src/aed2_Juego.cpp.o
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.h
+ /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/aed2_Juego.cpp
  /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/aed2_Juego.h
