@@ -3,36 +3,27 @@
 
 #include <vector>
 #include "Tipos.h"
+#include "Sokoban.h"
+#include "Nivel.h"
 
 class Juego {
 public:
 
-    Juego(vector<aed2_Nivel> ns);
+    Juego(vector<Nivel*> *ns);
 
-    bool hayPared(Coordenada c) const;
-
-    bool hayDeposito(Coordenada c) const;
-
-    bool hayCaja(Coordenada c) const;
-
-    Coordenada posicionActual() const;
-
-    Nat cantidadBombas() const;
-
-    bool sePuedeMover(PuntoCardinal pc) const;
-
-    // IMPORTANTE: Debe devolver:
-    // - true si al mover se completa el nivel actual
-    // - false en caso contrario.
-    bool mover(PuntoCardinal pc);
-
+    Sokoban* nivelActual();
+//    vector<Nivel> nivelesPendientes();
+    bool mover(PuntoCardinal dir);
     void tirarBomba();
-
     void deshacer();
+
 
 private:
 
-    // Completar
+    vector<Nivel*> *_niveles;
+    Nat _idxNivelActual;
+    Sokoban *_sokoActual;
+    vector<Sokoban *> _sokobanes;
 
 };
 

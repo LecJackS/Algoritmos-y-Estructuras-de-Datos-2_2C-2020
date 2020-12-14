@@ -59,10 +59,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/129/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/137/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/137/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/es
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/129/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/137/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -90,7 +90,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/129/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/137/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named correrValgrindJuego
+
+# Build rule for target.
+correrValgrindJuego: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 correrValgrindJuego
+.PHONY : correrValgrindJuego
+
+# fast build rule for target.
+correrValgrindJuego/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrValgrindJuego.dir/build.make CMakeFiles/correrValgrindJuego.dir/build
+.PHONY : correrValgrindJuego/fast
+
+#=============================================================================
 # Target rules for targets named gtest
 
 # Build rule for target.
@@ -142,6 +155,19 @@ gtest: cmake_check_build_system
 gtest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named sokobanGUI
+
+# Build rule for target.
+sokobanGUI: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sokobanGUI
+.PHONY : sokobanGUI
+
+# fast build rule for target.
+sokobanGUI/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/build
+.PHONY : sokobanGUI/fast
 
 #=============================================================================
 # Target rules for targets named gtest_main
@@ -157,19 +183,6 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named correrValgrindJuego
-
-# Build rule for target.
-correrValgrindJuego: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 correrValgrindJuego
-.PHONY : correrValgrindJuego
-
-# fast build rule for target.
-correrValgrindJuego/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrValgrindJuego.dir/build.make CMakeFiles/correrValgrindJuego.dir/build
-.PHONY : correrValgrindJuego/fast
-
-#=============================================================================
 # Target rules for targets named correrTestsJuego
 
 # Build rule for target.
@@ -182,12 +195,295 @@ correrTestsJuego/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/build
 .PHONY : correrTestsJuego/fast
 
+gui/InterfazGrafica.o: gui/InterfazGrafica.cpp.o
+
+.PHONY : gui/InterfazGrafica.o
+
+# target to build an object file
+gui/InterfazGrafica.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.o
+.PHONY : gui/InterfazGrafica.cpp.o
+
+gui/InterfazGrafica.i: gui/InterfazGrafica.cpp.i
+
+.PHONY : gui/InterfazGrafica.i
+
+# target to preprocess a source file
+gui/InterfazGrafica.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.i
+.PHONY : gui/InterfazGrafica.cpp.i
+
+gui/InterfazGrafica.s: gui/InterfazGrafica.cpp.s
+
+.PHONY : gui/InterfazGrafica.s
+
+# target to generate assembly for a file
+gui/InterfazGrafica.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/InterfazGrafica.cpp.s
+.PHONY : gui/InterfazGrafica.cpp.s
+
+gui/LectorDeNiveles.o: gui/LectorDeNiveles.cpp.o
+
+.PHONY : gui/LectorDeNiveles.o
+
+# target to build an object file
+gui/LectorDeNiveles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.o
+.PHONY : gui/LectorDeNiveles.cpp.o
+
+gui/LectorDeNiveles.i: gui/LectorDeNiveles.cpp.i
+
+.PHONY : gui/LectorDeNiveles.i
+
+# target to preprocess a source file
+gui/LectorDeNiveles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.i
+.PHONY : gui/LectorDeNiveles.cpp.i
+
+gui/LectorDeNiveles.s: gui/LectorDeNiveles.cpp.s
+
+.PHONY : gui/LectorDeNiveles.s
+
+# target to generate assembly for a file
+gui/LectorDeNiveles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/LectorDeNiveles.cpp.s
+.PHONY : gui/LectorDeNiveles.cpp.s
+
+gui/MapaGrafico.o: gui/MapaGrafico.cpp.o
+
+.PHONY : gui/MapaGrafico.o
+
+# target to build an object file
+gui/MapaGrafico.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.o
+.PHONY : gui/MapaGrafico.cpp.o
+
+gui/MapaGrafico.i: gui/MapaGrafico.cpp.i
+
+.PHONY : gui/MapaGrafico.i
+
+# target to preprocess a source file
+gui/MapaGrafico.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.i
+.PHONY : gui/MapaGrafico.cpp.i
+
+gui/MapaGrafico.s: gui/MapaGrafico.cpp.s
+
+.PHONY : gui/MapaGrafico.s
+
+# target to generate assembly for a file
+gui/MapaGrafico.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/MapaGrafico.cpp.s
+.PHONY : gui/MapaGrafico.cpp.s
+
+gui/RenderizadorMapaGrafico.o: gui/RenderizadorMapaGrafico.cpp.o
+
+.PHONY : gui/RenderizadorMapaGrafico.o
+
+# target to build an object file
+gui/RenderizadorMapaGrafico.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.o
+.PHONY : gui/RenderizadorMapaGrafico.cpp.o
+
+gui/RenderizadorMapaGrafico.i: gui/RenderizadorMapaGrafico.cpp.i
+
+.PHONY : gui/RenderizadorMapaGrafico.i
+
+# target to preprocess a source file
+gui/RenderizadorMapaGrafico.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.i
+.PHONY : gui/RenderizadorMapaGrafico.cpp.i
+
+gui/RenderizadorMapaGrafico.s: gui/RenderizadorMapaGrafico.cpp.s
+
+.PHONY : gui/RenderizadorMapaGrafico.s
+
+# target to generate assembly for a file
+gui/RenderizadorMapaGrafico.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/RenderizadorMapaGrafico.cpp.s
+.PHONY : gui/RenderizadorMapaGrafico.cpp.s
+
+gui/Textura.o: gui/Textura.cpp.o
+
+.PHONY : gui/Textura.o
+
+# target to build an object file
+gui/Textura.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/Textura.cpp.o
+.PHONY : gui/Textura.cpp.o
+
+gui/Textura.i: gui/Textura.cpp.i
+
+.PHONY : gui/Textura.i
+
+# target to preprocess a source file
+gui/Textura.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/Textura.cpp.i
+.PHONY : gui/Textura.cpp.i
+
+gui/Textura.s: gui/Textura.cpp.s
+
+.PHONY : gui/Textura.s
+
+# target to generate assembly for a file
+gui/Textura.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/Textura.cpp.s
+.PHONY : gui/Textura.cpp.s
+
+gui/main.o: gui/main.cpp.o
+
+.PHONY : gui/main.o
+
+# target to build an object file
+gui/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/main.cpp.o
+.PHONY : gui/main.cpp.o
+
+gui/main.i: gui/main.cpp.i
+
+.PHONY : gui/main.i
+
+# target to preprocess a source file
+gui/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/main.cpp.i
+.PHONY : gui/main.cpp.i
+
+gui/main.s: gui/main.cpp.s
+
+.PHONY : gui/main.s
+
+# target to generate assembly for a file
+gui/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/gui/main.cpp.s
+.PHONY : gui/main.cpp.s
+
+src/Juego.o: src/Juego.cpp.o
+
+.PHONY : src/Juego.o
+
+# target to build an object file
+src/Juego.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Juego.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.o
+.PHONY : src/Juego.cpp.o
+
+src/Juego.i: src/Juego.cpp.i
+
+.PHONY : src/Juego.i
+
+# target to preprocess a source file
+src/Juego.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Juego.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.i
+.PHONY : src/Juego.cpp.i
+
+src/Juego.s: src/Juego.cpp.s
+
+.PHONY : src/Juego.s
+
+# target to generate assembly for a file
+src/Juego.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Juego.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.s
+.PHONY : src/Juego.cpp.s
+
+src/Mapa.o: src/Mapa.cpp.o
+
+.PHONY : src/Mapa.o
+
+# target to build an object file
+src/Mapa.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Mapa.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.o
+.PHONY : src/Mapa.cpp.o
+
+src/Mapa.i: src/Mapa.cpp.i
+
+.PHONY : src/Mapa.i
+
+# target to preprocess a source file
+src/Mapa.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Mapa.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.i
+.PHONY : src/Mapa.cpp.i
+
+src/Mapa.s: src/Mapa.cpp.s
+
+.PHONY : src/Mapa.s
+
+# target to generate assembly for a file
+src/Mapa.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Mapa.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.s
+.PHONY : src/Mapa.cpp.s
+
+src/Nivel.o: src/Nivel.cpp.o
+
+.PHONY : src/Nivel.o
+
+# target to build an object file
+src/Nivel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Nivel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.o
+.PHONY : src/Nivel.cpp.o
+
+src/Nivel.i: src/Nivel.cpp.i
+
+.PHONY : src/Nivel.i
+
+# target to preprocess a source file
+src/Nivel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Nivel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.i
+.PHONY : src/Nivel.cpp.i
+
+src/Nivel.s: src/Nivel.cpp.s
+
+.PHONY : src/Nivel.s
+
+# target to generate assembly for a file
+src/Nivel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Nivel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.s
+.PHONY : src/Nivel.cpp.s
+
+src/Sokoban.o: src/Sokoban.cpp.o
+
+.PHONY : src/Sokoban.o
+
+# target to build an object file
+src/Sokoban.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Sokoban.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.o
+.PHONY : src/Sokoban.cpp.o
+
+src/Sokoban.i: src/Sokoban.cpp.i
+
+.PHONY : src/Sokoban.i
+
+# target to preprocess a source file
+src/Sokoban.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Sokoban.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.i
+.PHONY : src/Sokoban.cpp.i
+
+src/Sokoban.s: src/Sokoban.cpp.s
+
+.PHONY : src/Sokoban.s
+
+# target to generate assembly for a file
+src/Sokoban.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/Sokoban.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.s
+.PHONY : src/Sokoban.cpp.s
+
 src/aed2_Juego.o: src/aed2_Juego.cpp.o
 
 .PHONY : src/aed2_Juego.o
 
 # target to build an object file
 src/aed2_Juego.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/aed2_Juego.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.o
 .PHONY : src/aed2_Juego.cpp.o
 
@@ -197,6 +493,7 @@ src/aed2_Juego.i: src/aed2_Juego.cpp.i
 
 # target to preprocess a source file
 src/aed2_Juego.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/aed2_Juego.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.i
 .PHONY : src/aed2_Juego.cpp.i
 
@@ -206,6 +503,7 @@ src/aed2_Juego.s: src/aed2_Juego.cpp.s
 
 # target to generate assembly for a file
 src/aed2_Juego.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/src/aed2_Juego.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.s
 .PHONY : src/aed2_Juego.cpp.s
 
@@ -302,6 +600,37 @@ help:
 	@echo "... correrTestsJuego"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... sokobanGUI"
+	@echo "... gui/InterfazGrafica.o"
+	@echo "... gui/InterfazGrafica.i"
+	@echo "... gui/InterfazGrafica.s"
+	@echo "... gui/LectorDeNiveles.o"
+	@echo "... gui/LectorDeNiveles.i"
+	@echo "... gui/LectorDeNiveles.s"
+	@echo "... gui/MapaGrafico.o"
+	@echo "... gui/MapaGrafico.i"
+	@echo "... gui/MapaGrafico.s"
+	@echo "... gui/RenderizadorMapaGrafico.o"
+	@echo "... gui/RenderizadorMapaGrafico.i"
+	@echo "... gui/RenderizadorMapaGrafico.s"
+	@echo "... gui/Textura.o"
+	@echo "... gui/Textura.i"
+	@echo "... gui/Textura.s"
+	@echo "... gui/main.o"
+	@echo "... gui/main.i"
+	@echo "... gui/main.s"
+	@echo "... src/Juego.o"
+	@echo "... src/Juego.i"
+	@echo "... src/Juego.s"
+	@echo "... src/Mapa.o"
+	@echo "... src/Mapa.i"
+	@echo "... src/Mapa.s"
+	@echo "... src/Nivel.o"
+	@echo "... src/Nivel.i"
+	@echo "... src/Nivel.s"
+	@echo "... src/Sokoban.o"
+	@echo "... src/Sokoban.i"
+	@echo "... src/Sokoban.s"
 	@echo "... src/aed2_Juego.o"
 	@echo "... src/aed2_Juego.i"
 	@echo "... src/aed2_Juego.s"

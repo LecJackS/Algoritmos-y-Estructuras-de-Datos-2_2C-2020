@@ -55,10 +55,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/129/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/137/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/137/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -74,6 +74,7 @@ CMAKE_BINARY_DIR = /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/es
 
 # The main recursive "all" target.
 all: CMakeFiles/gtest.dir/all
+all: CMakeFiles/sokobanGUI.dir/all
 all: CMakeFiles/gtest_main.dir/all
 all: CMakeFiles/correrTestsJuego.dir/all
 
@@ -85,12 +86,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/gtest.dir/clean
-clean: CMakeFiles/gtest_main.dir/clean
 clean: CMakeFiles/correrValgrindJuego.dir/clean
+clean: CMakeFiles/gtest.dir/clean
+clean: CMakeFiles/sokobanGUI.dir/clean
+clean: CMakeFiles/gtest_main.dir/clean
 clean: CMakeFiles/correrTestsJuego.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/correrValgrindJuego.dir
+
+# All Build rule for target.
+CMakeFiles/correrValgrindJuego.dir/all: CMakeFiles/correrTestsJuego.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrValgrindJuego.dir/build.make CMakeFiles/correrValgrindJuego.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrValgrindJuego.dir/build.make CMakeFiles/correrValgrindJuego.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num= "Built target correrValgrindJuego"
+.PHONY : CMakeFiles/correrValgrindJuego.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/correrValgrindJuego.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/correrValgrindJuego.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/correrValgrindJuego.dir/rule
+
+# Convenience name for target.
+correrValgrindJuego: CMakeFiles/correrValgrindJuego.dir/rule
+
+.PHONY : correrValgrindJuego
+
+# clean rule for target.
+CMakeFiles/correrValgrindJuego.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrValgrindJuego.dir/build.make CMakeFiles/correrValgrindJuego.dir/clean
+.PHONY : CMakeFiles/correrValgrindJuego.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/gtest.dir
@@ -99,7 +128,7 @@ clean: CMakeFiles/correrTestsJuego.dir/clean
 CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target gtest"
 .PHONY : CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -120,13 +149,40 @@ CMakeFiles/gtest.dir/clean:
 .PHONY : CMakeFiles/gtest.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/sokobanGUI.dir
+
+# All Build rule for target.
+CMakeFiles/sokobanGUI.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23 "Built target sokobanGUI"
+.PHONY : CMakeFiles/sokobanGUI.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sokobanGUI.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sokobanGUI.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/sokobanGUI.dir/rule
+
+# Convenience name for target.
+sokobanGUI: CMakeFiles/sokobanGUI.dir/rule
+
+.PHONY : sokobanGUI
+
+# clean rule for target.
+CMakeFiles/sokobanGUI.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sokobanGUI.dir/build.make CMakeFiles/sokobanGUI.dir/clean
+.PHONY : CMakeFiles/sokobanGUI.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/gtest_main.dir
 
 # All Build rule for target.
 CMakeFiles/gtest_main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest_main.dir/build.make CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest_main.dir/build.make CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target gtest_main"
 .PHONY : CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -147,33 +203,6 @@ CMakeFiles/gtest_main.dir/clean:
 .PHONY : CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/correrValgrindJuego.dir
-
-# All Build rule for target.
-CMakeFiles/correrValgrindJuego.dir/all: CMakeFiles/correrTestsJuego.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrValgrindJuego.dir/build.make CMakeFiles/correrValgrindJuego.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrValgrindJuego.dir/build.make CMakeFiles/correrValgrindJuego.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num= "Built target correrValgrindJuego"
-.PHONY : CMakeFiles/correrValgrindJuego.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/correrValgrindJuego.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/correrValgrindJuego.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/correrValgrindJuego.dir/rule
-
-# Convenience name for target.
-correrValgrindJuego: CMakeFiles/correrValgrindJuego.dir/rule
-
-.PHONY : correrValgrindJuego
-
-# clean rule for target.
-CMakeFiles/correrValgrindJuego.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrValgrindJuego.dir/build.make CMakeFiles/correrValgrindJuego.dir/clean
-.PHONY : CMakeFiles/correrValgrindJuego.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/correrTestsJuego.dir
 
 # All Build rule for target.
@@ -181,12 +210,12 @@ CMakeFiles/correrTestsJuego.dir/all: CMakeFiles/gtest.dir/all
 CMakeFiles/correrTestsJuego.dir/all: CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correrTestsJuego.dir/build.make CMakeFiles/correrTestsJuego.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target correrTestsJuego"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target correrTestsJuego"
 .PHONY : CMakeFiles/correrTestsJuego.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/correrTestsJuego.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/correrTestsJuego.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/correrTestsJuego.dir/rule

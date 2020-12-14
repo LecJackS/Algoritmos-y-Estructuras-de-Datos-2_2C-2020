@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "Tipos.h"
+#include "Juego.h"
 
 class aed2_Juego {
 public:
@@ -31,8 +32,9 @@ public:
     void deshacer();
 
 private:
-
-	// Completar
+    vector<Nivel*> *convertirNiveles(vector<aed2_Nivel>);
+	vector<aed2_Nivel> _niveles;
+	Juego *_juego;
 
 };
 

@@ -54,10 +54,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/129/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/137/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/137/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -77,9 +77,61 @@ include CMakeFiles/correrTestsJuego.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/correrTestsJuego.dir/flags.make
 
+CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.o: CMakeFiles/correrTestsJuego.dir/flags.make
+CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.o: ../src/Juego.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.o -c /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.cpp
+
+CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.cpp > CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.i
+
+CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.cpp -o CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.s
+
+CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.o: CMakeFiles/correrTestsJuego.dir/flags.make
+CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.o: ../src/Mapa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.o -c /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.cpp
+
+CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.cpp > CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.i
+
+CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.cpp -o CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.s
+
+CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.o: CMakeFiles/correrTestsJuego.dir/flags.make
+CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.o: ../src/Nivel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.o -c /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.cpp
+
+CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.cpp > CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.i
+
+CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.cpp -o CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.s
+
+CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.o: CMakeFiles/correrTestsJuego.dir/flags.make
+CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.o: ../src/Sokoban.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.o -c /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.cpp
+
+CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.cpp > CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.i
+
+CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.cpp -o CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.s
+
 CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.o: CMakeFiles/correrTestsJuego.dir/flags.make
 CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.o: ../src/aed2_Juego.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.o -c /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/aed2_Juego.cpp
 
 CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.i: cmake_force
@@ -92,7 +144,7 @@ CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.s: cmake_force
 
 CMakeFiles/correrTestsJuego.dir/tests/juego-tests.cpp.o: CMakeFiles/correrTestsJuego.dir/flags.make
 CMakeFiles/correrTestsJuego.dir/tests/juego-tests.cpp.o: ../tests/juego-tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/correrTestsJuego.dir/tests/juego-tests.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/correrTestsJuego.dir/tests/juego-tests.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTestsJuego.dir/tests/juego-tests.cpp.o -c /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/tests/juego-tests.cpp
 
 CMakeFiles/correrTestsJuego.dir/tests/juego-tests.cpp.i: cmake_force
@@ -105,19 +157,27 @@ CMakeFiles/correrTestsJuego.dir/tests/juego-tests.cpp.s: cmake_force
 
 # Object files for target correrTestsJuego
 correrTestsJuego_OBJECTS = \
+"CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.o" \
+"CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.o" \
+"CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.o" \
+"CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.o" \
 "CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.o" \
 "CMakeFiles/correrTestsJuego.dir/tests/juego-tests.cpp.o"
 
 # External object files for target correrTestsJuego
 correrTestsJuego_EXTERNAL_OBJECTS =
 
+correrTestsJuego: CMakeFiles/correrTestsJuego.dir/src/Juego.cpp.o
+correrTestsJuego: CMakeFiles/correrTestsJuego.dir/src/Mapa.cpp.o
+correrTestsJuego: CMakeFiles/correrTestsJuego.dir/src/Nivel.cpp.o
+correrTestsJuego: CMakeFiles/correrTestsJuego.dir/src/Sokoban.cpp.o
 correrTestsJuego: CMakeFiles/correrTestsJuego.dir/src/aed2_Juego.cpp.o
 correrTestsJuego: CMakeFiles/correrTestsJuego.dir/tests/juego-tests.cpp.o
 correrTestsJuego: CMakeFiles/correrTestsJuego.dir/build.make
 correrTestsJuego: libgtest.a
 correrTestsJuego: libgtest_main.a
 correrTestsJuego: CMakeFiles/correrTestsJuego.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable correrTestsJuego"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable correrTestsJuego"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/correrTestsJuego.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

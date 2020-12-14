@@ -5,7 +5,7 @@
 		<Option title="TP4_Sokoban"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\;CMake Files\cmake_modulos\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug"/>
@@ -22,6 +22,16 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrValgrindJuego">
+				<Option working_dir="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrValgrindJuego"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -44,6 +54,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -66,6 +77,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -81,6 +93,52 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="sokobanGUI">
+				<Option output="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/sokobanGUI" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 sokobanGUI"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sokobanGUI/fast">
+				<Option output="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/sokobanGUI" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 sokobanGUI/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="gtest_main">
 				<Option output="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug"/>
@@ -88,6 +146,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -110,6 +169,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -125,16 +185,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="correrValgrindJuego">
-				<Option working_dir="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrValgrindJuego"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="correrTestsJuego">
 				<Option output="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug/correrTestsJuego" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake-build-debug"/>
@@ -142,6 +192,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -164,6 +215,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -180,13 +232,81 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/InterfazGrafica.cpp">
+			<Option target="sokobanGUI"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/InterfazGrafica.h">
+			<Option target="sokobanGUI"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/LectorDeNiveles.cpp">
+			<Option target="sokobanGUI"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/LectorDeNiveles.h">
+			<Option target="sokobanGUI"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/MapaGrafico.cpp">
+			<Option target="sokobanGUI"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/MapaGrafico.h">
+			<Option target="sokobanGUI"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/RenderizadorMapaGrafico.cpp">
+			<Option target="sokobanGUI"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/RenderizadorMapaGrafico.h">
+			<Option target="sokobanGUI"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/Textura.cpp">
+			<Option target="sokobanGUI"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/Textura.h">
+			<Option target="sokobanGUI"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/gui/main.cpp">
+			<Option target="sokobanGUI"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.cpp">
+			<Option target="sokobanGUI"/>
+			<Option target="correrTestsJuego"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.h">
+			<Option target="sokobanGUI"/>
+			<Option target="correrTestsJuego"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.cpp">
+			<Option target="sokobanGUI"/>
+			<Option target="correrTestsJuego"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.h">
+			<Option target="sokobanGUI"/>
+			<Option target="correrTestsJuego"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.cpp">
+			<Option target="sokobanGUI"/>
+			<Option target="correrTestsJuego"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.h">
+			<Option target="sokobanGUI"/>
+			<Option target="correrTestsJuego"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.cpp">
+			<Option target="sokobanGUI"/>
+			<Option target="correrTestsJuego"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h">
+			<Option target="sokobanGUI"/>
+			<Option target="correrTestsJuego"/>
+		</Unit>
 		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h">
+			<Option target="sokobanGUI"/>
 			<Option target="correrTestsJuego"/>
 		</Unit>
 		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/aed2_Juego.cpp">
+			<Option target="sokobanGUI"/>
 			<Option target="correrTestsJuego"/>
 		</Unit>
 		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/aed2_Juego.h">
+			<Option target="sokobanGUI"/>
 			<Option target="correrTestsJuego"/>
 		</Unit>
 		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/tests/gtest-1.8.1/gtest-all.cc">
@@ -200,6 +320,12 @@
 		</Unit>
 		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/../../../../../usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/cmake_modulos/FindSDL2_image.cmake">
+			<Option virtualFolder="CMake Files\cmake_modulos\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

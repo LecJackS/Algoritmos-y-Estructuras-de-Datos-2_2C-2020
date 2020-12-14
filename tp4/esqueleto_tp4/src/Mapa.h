@@ -10,10 +10,31 @@
 #include <vector>;
 
 class Mapa {
-        map<Nat, Coordenada> paredes;
-        map<Nat, Coordenada> depositos;
-        vector<Coordenada> explosiones;
-        Nat cantidadBombas;
+public:
+    Mapa();
+
+    Mapa(set<Coordenada> paredes, set<Coordenada> depositos);
+
+    bool hayPared(Coordenada c);
+    bool hayDeposito(Coordenada c);
+
+    void agregarParedOrd(Coordenada c);
+    void agregarDepositoOrd(Coordenada c);
+
+    void tirarBomba(Coordenada c);
+
+    void borrarUltimaExplosion();
+
+    set<Coordenada> depositos();
+
+private:
+    Nat buscarPosicion(string objeto, Coordenada c);
+    bool busquedaBinaria(string objeto, Coordenada c);
+
+    vector<Coordenada> _paredesOrd;
+    vector<Coordenada> _depositosOrd;
+    vector<Coordenada> _explosiones;
+
 };
 
 

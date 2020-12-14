@@ -6,11 +6,36 @@
 #define TP4_SOKOBAN_SOKOBAN_H
 
 #include <vector>
+#include "Nivel.h"
+#include "Tipos.h"
+
 using namespace std;
 
 class Sokoban {
-    vector<itNivel> estados;
-    vector<bool> accion_fue_tirar_bomba;
+public:
+    Sokoban(Nivel* n);
+
+    Mapa mapa();
+    Coordenada persona();
+    bool hayCaja(Coordenada coord);
+    Nat numBombas();
+    void deshacer();
+
+    void mover(PuntoCardinal dir);
+    void tirarBomba();
+
+    bool noHayParedNiCaja(Coordenada c);
+    bool puedoMover(PuntoCardinal);
+
+    bool gano();
+    bool hayCajas(set<Coordenada> cs);
+
+private:
+    void deshacerMover(PuntoCardinal dir);
+    Nivel *_nivel;
+    vector<Nat> _accionFue;
+    vector<bool> _accionMovioCaja;
+    vector<Coordenada*> _cajaMovida;
 };
 
 
