@@ -5,15 +5,19 @@
 #include "Mapa.h"
 #include <algorithm>
 
-Mapa::Mapa() {}
+Mapa::Mapa() : _setDepositos(nullptr){}
 
-Mapa::Mapa(set<Coordenada> paredes, set<Coordenada> depositos) {
+Mapa::Mapa(set<Coordenada> paredes, set<Coordenada> depositos) : _setDepositos(nullptr){
     for(Coordenada pared : paredes){
         agregarParedOrd(pared);
     }
     for(Coordenada depo : depositos){
         agregarDepositoOrd(depo);
     }
+}
+
+Mapa::~Mapa() {
+    delete(_setDepositos);
 }
 
 bool Mapa::hayPared(Coordenada c) {
@@ -113,12 +117,18 @@ bool Mapa::busquedaBinaria(string objeto, Coordenada c) {
 }
 
 set<Coordenada> Mapa::depositos() {
-    set<Coordenada> *res = new set<Coordenada>();
-    for(Coordenada depo : _depositosOrd){
-        res->insert(depo);
+    if (_setDepositos != nullptr){
+        delete(_setDepositos);
     }
-    return *res;
+    _setDepositos = new set<Coordenada>;
+    for(Coordenada depo : _depositosOrd){
+        _setDepositos->insert(depo);
+    }
+
+    return *_setDepositos;
 }
+
+
 
 
 

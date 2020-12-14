@@ -10,6 +10,7 @@
 class Nivel {
 public:
     Nivel(Mapa m, Coordenada p, set<Coordenada> cs, Nat b);
+    ~Nivel();
 
     Mapa mapaN();
     Coordenada personaN();
@@ -28,6 +29,7 @@ private:
     Coordenada _persona;
     vector<Coordenada> _cajas;
     Nat _bombas;
+    set<Coordenada> *_setCajas;
 
 };
 

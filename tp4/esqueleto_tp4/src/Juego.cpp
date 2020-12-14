@@ -15,6 +15,12 @@ Juego::Juego(vector<Nivel*> *ns) : _niveles(ns), _idxNivelActual(0) {
     _sokobanes[0] = _sokoActual;
 }
 
+Juego::~Juego() {
+    for(Sokoban * s : _sokobanes){
+        delete(s);
+    }
+}
+
 Sokoban *Juego::nivelActual() {
     return _sokoActual;
 }
@@ -28,6 +34,7 @@ bool Juego::mover(PuntoCardinal dir) {
     if(_sokoActual->gano() && _sokoActual!=_sokobanes[_sokobanes.size()-1]){
         _idxNivelActual+=1;
         _sokoActual = new Sokoban(_niveles->operator[](_idxNivelActual));
+        _sokobanes.push_back(_sokoActual);
         return true;
     }
     return false;
@@ -40,4 +47,6 @@ void Juego::tirarBomba() {
 void Juego::deshacer() {
     _sokoActual->deshacer();
 }
+
+
 

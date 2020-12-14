@@ -10,6 +10,8 @@ public:
 
     aed2_Juego(vector<aed2_Nivel> ns);
 
+    ~aed2_Juego();
+
     bool hayPared(Coordenada c) const;
 
     bool hayDeposito(Coordenada c) const;
@@ -33,7 +35,7 @@ public:
 
 private:
     vector<Nivel*> *convertirNiveles(vector<aed2_Nivel>);
-	vector<aed2_Nivel> _niveles;
+    vector<Nivel*> *_niveles;
 	Juego *_juego;
 
 };

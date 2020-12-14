@@ -10,6 +10,7 @@ class Juego {
 public:
 
     Juego(vector<Nivel*> *ns);
+    ~Juego();
 
     Sokoban* nivelActual();
 //    vector<Nivel> nivelesPendientes();

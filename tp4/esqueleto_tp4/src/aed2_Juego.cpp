@@ -2,10 +2,19 @@
 #include "Juego.h"
 #include "Nivel.h"
 
-aed2_Juego::aed2_Juego(vector<aed2_Nivel> ns) : _niveles(ns){
-    _juego = new Juego(convertirNiveles(ns));
+aed2_Juego::aed2_Juego(vector<aed2_Nivel> ns) {
+    _niveles = convertirNiveles(ns);
+    _juego = new Juego(_niveles);
+
 }
 
+aed2_Juego::~aed2_Juego() {
+    delete(_juego);
+    for(Nivel *n : *_niveles){
+        delete(n);
+    }
+    delete(_niveles);
+}
 
 vector<Nivel*> *aed2_Juego::convertirNiveles(vector<aed2_Nivel> niv_aed2) {
     vector<Nivel*> * niveles = new vector<Nivel*>(niv_aed2.size());
@@ -60,5 +69,7 @@ void aed2_Juego::tirarBomba() {
 void aed2_Juego::deshacer() {
     _juego->deshacer();
 }
+
+
 
 

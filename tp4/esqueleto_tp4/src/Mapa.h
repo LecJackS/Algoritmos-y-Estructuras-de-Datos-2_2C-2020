@@ -12,8 +12,9 @@
 class Mapa {
 public:
     Mapa();
-
     Mapa(set<Coordenada> paredes, set<Coordenada> depositos);
+
+    ~Mapa();
 
     bool hayPared(Coordenada c);
     bool hayDeposito(Coordenada c);
@@ -34,6 +35,7 @@ private:
     vector<Coordenada> _paredesOrd;
     vector<Coordenada> _depositosOrd;
     vector<Coordenada> _explosiones;
+    set<Coordenada> *_setDepositos;
 
 };
 
