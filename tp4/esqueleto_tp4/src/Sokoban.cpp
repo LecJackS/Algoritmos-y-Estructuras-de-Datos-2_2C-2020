@@ -7,7 +7,11 @@
 Sokoban::Sokoban(Nivel *n) : _nivel(n) {
 }
 
-Mapa Sokoban::mapa() {
+Sokoban::~Sokoban() {
+    //delete(_nivel);
+}
+
+Mapa* Sokoban::mapa() {
     return _nivel->mapaN();
 }
 
@@ -17,7 +21,7 @@ Coordenada Sokoban::persona() {
 
 bool Sokoban::hayCaja(Coordenada coord) {
     bool res = false;
-    for(Coordenada caja : _nivel->cajasN()){
+    for(Coordenada caja : *(_nivel->cajasN())){
         if (caja == coord){
             res = true;
         }
@@ -35,7 +39,7 @@ void Sokoban::deshacer() {
         if(_accionFue[na-1] == 0){
             // Acción fue Tirar Bomba
             // Solo borro la explosión y recupero la bomba
-            _nivel->mapaN().borrarUltimaExplosion();
+            _nivel->mapaN()->borrarUltimaExplosion();
             _nivel->aumentarBombas();
         }
         else if (_accionFue[na-1] == 1){
@@ -107,13 +111,13 @@ void Sokoban::mover(PuntoCardinal dir) {
 }
 
 void Sokoban::tirarBomba() {
-    _nivel->mapaN().tirarBomba(_nivel->personaN());
+    _nivel->mapaN()->tirarBomba(_nivel->personaN());
     _nivel->reducirBombas();
     _accionFue.push_back(0);
 }
 
 bool Sokoban::noHayParedNiCaja(Coordenada coord) {
-    return !_nivel->mapaN().hayPared(coord) && !hayCaja(coord);
+    return !_nivel->mapaN()->hayPared(coord) && !hayCaja(coord);
 }
 
 bool Sokoban::puedoMover(PuntoCardinal dir) {
@@ -131,12 +135,14 @@ bool Sokoban::puedoMover(PuntoCardinal dir) {
 }
 
 bool Sokoban::gano() {
-    return _nivel->cajasN()==_nivel->mapaN().depositos();
+    return *(_nivel->cajasN())==_nivel->mapaN()->depositos();
 }
 
 bool Sokoban::hayCajas(set<Coordenada> cs) {
-    return cs == _nivel->cajasN();
+    return cs == *(_nivel->cajasN());
 }
+
+
 
 
 

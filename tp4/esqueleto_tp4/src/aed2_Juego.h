@@ -34,7 +34,7 @@ public:
     void deshacer();
 
 private:
-    vector<Nivel*> *convertirNiveles(vector<aed2_Nivel>);
+    void convertirNiveles(vector<aed2_Nivel>);
     vector<Nivel*> *_niveles;
 	Juego *_juego;
 

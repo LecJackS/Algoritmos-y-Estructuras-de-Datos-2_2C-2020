@@ -4,20 +4,25 @@
 
 #include "Nivel.h"
 
-Nivel::Nivel(Mapa m, Coordenada p, set<Coordenada> cs, Nat b) : _setCajas(nullptr){
+Nivel::Nivel(Mapa *m, Coordenada p, set<Coordenada> cs, Nat b){
     _mapa = m;
     _persona = p;
     _bombas = b;
     for(Coordenada caja : cs){
         _cajas.push_back(caja);
     }
+    _setCajas = new set<Coordenada>();
 }
 
 Nivel::~Nivel() {
+//    if (_setCajas != nullptr){
+//        delete(_setCajas);
+//    }
     delete(_setCajas);
+    delete(_mapa);
 }
 
-Mapa Nivel::mapaN() {
+Mapa* Nivel::mapaN() {
     return _mapa;
 }
 
@@ -25,15 +30,14 @@ Coordenada Nivel::personaN() {
     return _persona;
 }
 
-set<Coordenada> Nivel::cajasN() {
+set<Coordenada>* Nivel::cajasN() {
     if (_setCajas != nullptr){
-        delete(_setCajas);
+        _setCajas->clear();
     }
-    _setCajas = new set<Coordenada>();
     for(Coordenada caja : _cajas){
         _setCajas->insert(caja);
     }
-    return *_setCajas;
+    return _setCajas;
 }
 
 Nat Nivel::numBombasN() {

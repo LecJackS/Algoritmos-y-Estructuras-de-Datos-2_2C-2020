@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.cpp
+Juego.h
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.h
+Sokoban.h
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h
+Nivel.h
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Nivel.h
+Tipos.h
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h
+
 /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Juego.h
 vector
 -
@@ -29,6 +39,10 @@ Tipos.h
 /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Tipos.h
 Mapa.h
 /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Mapa.h
+
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.cpp
+Sokoban.h
+/home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h
 
 /home/jack/Algoritmos-y-Estructuras-de-Datos-2_2C-2020/tp4/esqueleto_tp4/src/Sokoban.h
 vector

@@ -30,13 +30,14 @@ protected:
         posiciones789 = {pos7, pos8, pos9};
         posiciones5789 = {pos5, pos7, pos8, pos9};
         n1 = {posiciones123, posiciones456, posiciones789, pos0, 2};
-//        struct aed2_Nivel {
-//            set<Coordenada> paredes;
-//            set<Coordenada> depositos;
-//            set<Coordenada> cajas;
-//            Coordenada posicionInicial;
-//            Nat cantidadBombas;
-//        };
+        // Estructura de un nivel (para saber qué coordenada es qué)
+        // struct aed2_Nivel {
+        //     set<Coordenada> paredes;
+        //     set<Coordenada> depositos;
+        //     set<Coordenada> cajas;
+        //     Coordenada posicionInicial;
+        //     Nat cantidadBombas;
+        // };
         // Nivel n1:
         //
         // -D---
@@ -85,9 +86,9 @@ TEST_F(JuegoTest, empezar_juego_con_solapamientos) {
 TEST_F(JuegoTest, se_puede_mover) {
     aed2_Juego j({n1});
 
-//    EXPECT_TRUE(j.sePuedeMover(Norte));
-//    EXPECT_TRUE(j.sePuedeMover(Este));
-//    EXPECT_TRUE(j.sePuedeMover(Sur));
+    EXPECT_TRUE(j.sePuedeMover(Norte));
+    EXPECT_TRUE(j.sePuedeMover(Este));
+    EXPECT_TRUE(j.sePuedeMover(Sur));
     EXPECT_TRUE(j.sePuedeMover(Oeste));
 }
 

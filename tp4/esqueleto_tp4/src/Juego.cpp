@@ -9,9 +9,9 @@
 
 Juego::Juego(vector<Nivel*> *ns) : _niveles(ns), _idxNivelActual(0) {
     // Creo un Sokoban con el primer nivel del vector de niveles
-    _sokoActual = new Sokoban(ns->operator[](0));
-    // TODO: estoy copiando el contenido con tamaño? o debo usar heap memory?
+
     _sokobanes = vector<Sokoban *>(ns->size());
+    _sokoActual = new Sokoban(ns->operator[](0));
     _sokobanes[0] = _sokoActual;
 }
 
@@ -31,10 +31,10 @@ Sokoban *Juego::nivelActual() {
 
 bool Juego::mover(PuntoCardinal dir) {
     _sokoActual->mover(dir);
-    if(_sokoActual->gano() && _sokoActual!=_sokobanes[_sokobanes.size()-1]){
+    if(_sokoActual->gano() && _idxNivelActual!=(_sokobanes.size()-1)){
         _idxNivelActual+=1;
         _sokoActual = new Sokoban(_niveles->operator[](_idxNivelActual));
-        _sokobanes.push_back(_sokoActual);
+        _sokobanes[_idxNivelActual] = _sokoActual;
         return true;
     }
     return false;

@@ -15,7 +15,9 @@ class Sokoban {
 public:
     Sokoban(Nivel* n);
 
-    Mapa mapa();
+    ~Sokoban();
+
+    Mapa* mapa();
     Coordenada persona();
     bool hayCaja(Coordenada coord);
     Nat numBombas();

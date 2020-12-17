@@ -5,9 +5,12 @@
 #include "Mapa.h"
 #include <algorithm>
 
-Mapa::Mapa() : _setDepositos(nullptr){}
+Mapa::Mapa(){
+    _setDepositos = new set<Coordenada>();
+}
 
-Mapa::Mapa(set<Coordenada> paredes, set<Coordenada> depositos) : _setDepositos(nullptr){
+Mapa::Mapa(set<Coordenada> paredes, set<Coordenada> depositos){
+    _setDepositos = new set<Coordenada>;
     for(Coordenada pared : paredes){
         agregarParedOrd(pared);
     }
@@ -21,7 +24,15 @@ Mapa::~Mapa() {
 }
 
 bool Mapa::hayPared(Coordenada c) {
-    return busquedaBinaria("pared", c);
+    bool res;
+    res=busquedaBinaria("pared", c);
+    for (Coordenada exp: _explosiones){
+        if(exp.first == c.first || exp.second==c.second){
+            // Esta pared fue explotada => Ya no existe
+            res = false;
+        }
+    }
+    return res;
 }
 
 bool Mapa::hayDeposito(Coordenada c) {
@@ -118,9 +129,8 @@ bool Mapa::busquedaBinaria(string objeto, Coordenada c) {
 
 set<Coordenada> Mapa::depositos() {
     if (_setDepositos != nullptr){
-        delete(_setDepositos);
+        _setDepositos->clear();
     }
-    _setDepositos = new set<Coordenada>;
     for(Coordenada depo : _depositosOrd){
         _setDepositos->insert(depo);
     }
